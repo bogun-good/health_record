@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>온라인 보건실 방문 기록</title>
+    <title>학생 건강 상태 문진</title>
     <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
     <style>
         body {
@@ -134,7 +134,7 @@
 </head>
 <body>
     <div class="container">
-        <h2>🏥 보건실 방문 일지 입력</h2>
+        <h2>🏥 학생 건강 상태 문진</h2>
         <form id="healthForm">
             <div class="form-group">
                 <label for="grade">학년</label>
@@ -336,7 +336,7 @@
                     <input type="text" name="breath_1" placeholder="예: 1교시, 체육시간 등">
                 </div>
                 <div class="sub-q">
-                    <label>숨쉬기 힘들어서 집에서 약이나 흡입기를 사용하고 학교에 왔나요?</label>
+                    <label>숨쉬기 힘들어서 집에서 약이나 흡입기를 사용후 학교에 왔나요?</label>
                     <div class="radio-inline">
                         <label><input type="radio" name="breath_2" value="네"> 네</label>
                         <label><input type="radio" name="breath_2" value="아니오"> 아니오</label>
@@ -357,7 +357,7 @@
                     </div>
                 </div>
                 <div class="sub-q">
-                    <label>어지럽거나 입술 색이 파래진 느낌이 있나요?</label>
+                    <label>전에도 비슷한 증상이 있었나요?</label>
                     <div class="radio-inline">
                         <label><input type="radio" name="breath_5" value="네"> 네</label>
                         <label><input type="radio" name="breath_5" value="아니오"> 아니오</label>
@@ -376,7 +376,7 @@
                     <input type="text" name="etc_2" placeholder="예: 귀, 목, 이빨 등 상세히 작성">
                 </div>
                 <div class="sub-q">
-                    <label>다쳐서 아픈가요?</label>
+                    <label>넘어지거나 다쳐서 아픈가요?</label>
                     <div class="radio-inline">
                         <label><input type="radio" name="etc_3" value="네"> 네</label>
                         <label><input type="radio" name="etc_3" value="아니오"> 아니오</label>
@@ -398,7 +398,7 @@
                 </div>
             </div>
 
-            <button type="submit" id="submitBtn">보건선생님께 전달하기</button>
+            <button type="submit" id="submitBtn">제 출 하 기</button>
         </form>
     </div>
 
