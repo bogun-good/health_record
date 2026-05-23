@@ -460,7 +460,7 @@
                 "어떻게 다쳤나요?": document.querySelector('input[name="injury_2"]').value || "미입력",
                 "어디를 다쳤나요?": document.querySelector('input[name="injury_3"]').value || "미입력",
                 "움직일 수 있나요?": document.querySelector('input[name="injury_4"]:checked')?.value || "미선택",
-                "피가 나나요?": document.querySelector('input[name="injury_5"]:checked')?.value || "미선택"
+                "멍이 보이거나 피가 나나요?": document.querySelector('input[name="injury_5"]:checked')?.value || "미선택"
             };
         } else if (symptom === "복통") {
             answersObj = {
@@ -493,15 +493,15 @@
                 "집에서 약이나 흡입기를 사용했나요?": document.querySelector('input[name="breath_2"]:checked')?.value || "미선택",
                 "지금 말하기 힘들 정도로 숨쉬기 어려운가요?": document.querySelector('input[name="breath_3"]:checked')?.value || "미선택",
                 "천식이나 알레르기가 있나요?": document.querySelector('input[name="breath_4"]:checked')?.value || "미선택",
-                "어지럽거나 입술 색이 파래진 느낌이 있나요?": document.querySelector('input[name="breath_5"]:checked')?.value || "미선택"
+                "전에도  비슷한 증상이 있었나요?": document.querySelector('input[name="breath_5"]:checked')?.value || "미선택"
             };
         } else if (symptom === "기타") {
             answersObj = {
-                "언제부터 불편했나요?": document.querySelector('input[name="etc_1"]').value || "미입력",
-                "어디가 아픈가요?": document.querySelector('input[name="etc_2"]').value || "미입력",
-                "다쳐서 아픈가요?": document.querySelector('input[name="etc_3"]:checked')?.value || "미선택",
+                "어디가 아픈가요?": document.querySelector('input[name="etc_1"]').value || "미입력",
+                "언제부터 불편했나요?": document.querySelector('input[name="etc_2"]').value || "미입력",
+                "넘어지거나 다쳐서 아픈가요?": document.querySelector('input[name="etc_3"]:checked')?.value || "미선택",
                 "기침이나 콧물이 나나요?": document.querySelector('input[name="etc_4"]:checked')?.value || "미선택",
-                "가렵거나 따가운가요?": document.querySelector('input[name="etc_5"]:checked')?.value || "미선택"
+                "치아가 흔들리거나 입술이나 입안에서 피가 나나요?": document.querySelector('input[name="etc_5"]:checked')?.value || "미선택"
             };
         }
 
@@ -530,7 +530,7 @@
             alert(`저장 중 오류가 발생했습니다.\n이유: ${error.message || "데이터 구성 실패"}`);
         } finally {
             submitBtn.disabled = false;
-            submitBtn.innerText = "보건선생님께 전달하기";
+            submitBtn.innerText = "제출하기";
         }
     });
 </script>
